@@ -39,6 +39,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: "cloudflare",
+    inlineDynamicImports: true,
     prerender: {
       autoSubfolderIndex: false,
     },
