@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  experimental: { appManifest: false },
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@nuxthq/studio",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -34,6 +35,12 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
+    },
+  },
+  nitro: {
+    preset: "cloudflare",
+    prerender: {
+      autoSubfolderIndex: false,
     },
   },
 });
