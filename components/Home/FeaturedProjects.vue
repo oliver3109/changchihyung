@@ -13,7 +13,7 @@
     </div>
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
-        label="All Projects &rarr;"
+        label="所有项目 &rarr;"
         to="/projects"
         variant="link"
         color="gray"

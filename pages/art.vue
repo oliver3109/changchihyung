@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-const description = "我在空闲时间用 p5.js 做了一些算法生成艺术。";
+const description = "我在空闲时间用 p5.js 做了一些算法生成式艺术。";
 useSeoMeta({
   title: "Art 艺术 | Oliver Chang",
   description,

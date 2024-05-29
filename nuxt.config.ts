@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  experimental: { appManifest: false, payloadExtraction: true },
+  experimental: { appManifest: false, payloadExtraction: false },
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
