@@ -54,7 +54,7 @@ const items = [
     icon: "solar:document-add-outline",
   },
   { name: "艺术", path: "/art", icon: "pepicons-pencil:paint-pallet" },
-  { name: "实验室", path: "/lab", icon: "heroicons:beaker" },
+  // { name: "实验室", path: "/lab", icon: "heroicons:beaker" },
   // {
   //   name: "What's in my bag?",
   //   path: "/whats-in-my-bag",
