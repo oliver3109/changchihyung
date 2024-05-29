@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  experimental: { appManifest: false, payloadExtraction: false },
+  experimental: { appManifest: false, payloadExtraction: true },
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     head: {
       htmlAttrs: {
-        lang: "en",
+        lang: "zh-CN",
         class: "h-full",
       },
       bodyAttrs: {
