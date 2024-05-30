@@ -41,6 +41,12 @@ export default defineNuxtConfig({
     inlineDynamicImports: true,
     prerender: {
       autoSubfolderIndex: false,
+      crawlLinks: true,
+      routes: ["/"],
+    },
+    commands: {
+      preview: "npx wrangler dev ./server/index.mjs --site ./public",
+      deploy: "npx wrangler deploy",
     },
   },
 });
