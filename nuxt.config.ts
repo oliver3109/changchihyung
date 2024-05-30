@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   experimental: { appManifest: false, payloadExtraction: true },
   modules: [
     "@nuxt/ui",
@@ -38,7 +38,6 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: "cloudflare",
     inlineDynamicImports: true,
     prerender: {
       autoSubfolderIndex: false,
