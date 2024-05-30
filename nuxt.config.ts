@@ -42,6 +42,11 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
     },
+    output: {
+      dir: "output",
+      serverDir: "output/server",
+      publicDir: "output/public",
+    },
     commands: {
       preview: "npx wrangler dev ./server/index.mjs --site ./public",
       deploy: "npx wrangler deploy",
