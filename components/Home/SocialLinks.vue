@@ -42,10 +42,10 @@ const links = [
     url: "https://www.linkedin.com/in/oliver3109/",
     icon: "mdi:linkedin",
   },
-  {
-    name: "Telegram",
-    url: "https://t.me/oliver3109",
-    icon: "mdi:telegram",
-  },
+  // {
+  //   name: "Telegram",
+  //   url: "https://t.me/oliver3109",
+  //   icon: "mdi:telegram",
+  // },
 ];
 </script>
