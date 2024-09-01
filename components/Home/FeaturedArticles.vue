@@ -27,7 +27,15 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
 
-let lang = ref<string>(locale.value);
+let _lang = locale.value;
+const lang = computed({
+  get() {
+    return _lang;
+  },
+  set(v) {
+    _lang = v;
+  },
+});
 let articlesEn = ref<any>([]);
 let articlesZh = ref<any>([]);
 
