@@ -1,8 +1,7 @@
 <template>
   <div>
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
-      <!-- FEATURED PROEJCTS -->
-      特色项目
+      {{ $t("featuredProjects") }}
     </h2>
     <div class="space-y-4">
       <AppProjectCard
@@ -13,7 +12,7 @@
     </div>
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
-        label="所有项目 &rarr;"
+        :label="$t('allProjects') + ' &rarr;'"
         to="/projects"
         variant="link"
         color="gray"
@@ -23,7 +22,9 @@
 </template>
 
 <script lang="ts" setup>
+const { locale } = useI18n();
+
 const { data: projects } = await useAsyncData("projects-home", () =>
-  queryContent("/projects").limit(3).find()
+  queryContent(`${locale.value}/projects`).limit(3).find()
 );
 </script>

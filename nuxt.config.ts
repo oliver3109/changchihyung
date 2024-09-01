@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxthq/studio",
     "@vueuse/nuxt",
+    "@nuxtjs/i18n",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -51,5 +52,11 @@ export default defineNuxtConfig({
       preview: "npx wrangler dev ./server/index.mjs --site ./public",
       deploy: "npx wrangler deploy",
     },
+  },
+  i18n: {
+    strategy: "prefix_and_default", // 添加路由前缀的方式
+    locales: ["en", "zh"], //配置语种
+    defaultLocale: "en", // 默认语种
+    vueI18n: "./i18n.config.ts", // 通过vueI18n配置
   },
 });

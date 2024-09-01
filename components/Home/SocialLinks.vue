@@ -1,8 +1,7 @@
 <template>
   <div>
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">
-      <!-- FIND ME ON -->
-      找到我
+      {{ $t("findMe") }}
     </h2>
     <div class="space-y-5">
       <NuxtLink

@@ -6,11 +6,11 @@
       >
         <li v-for="item in items" :key="item.path">
           <UTooltip
-            :text="item.name"
+            :text="lang == 'zh' ? item.cnName : item.name"
             :ui="{ popper: { strategy: 'absolute' } }"
           >
             <ULink
-              :to="item.path"
+              :to="localePath(item.path)"
               class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
@@ -31,6 +31,9 @@
         <li>
           <AppThemeToggle />
         </li>
+        <li>
+          <AppSwitchLanguage />
+        </li>
       </ul>
     </nav>
   </div>
@@ -42,18 +45,30 @@ const headerRef = ref(null);
 const { styles } = useFixedHeader(headerRef);
 
 const items = [
-  { name: "主页", path: "/", icon: "solar:home-smile-outline" },
   {
-    name: "项目",
+    name: "homepage",
+    cnName: "主页",
+    path: "/",
+    icon: "solar:home-smile-outline",
+  },
+  {
+    name: "project",
+    cnName: "项目",
     path: "/projects",
     icon: "solar:folder-with-files-outline",
   },
   {
-    name: "文章",
+    name: "article",
+    cnName: "文章",
     path: "/articles",
     icon: "solar:document-add-outline",
   },
-  { name: "艺术", path: "/art", icon: "pepicons-pencil:paint-pallet" },
+  {
+    name: "art",
+    cnName: "艺术",
+    path: "/art",
+    icon: "pepicons-pencil:paint-pallet",
+  },
   // { name: "实验室", path: "/lab", icon: "heroicons:beaker" },
   // {
   //   name: "What's in my bag?",
@@ -66,4 +81,15 @@ const items = [
   //   icon: "solar:bookmark-linear",
   // },
 ];
+
+const { locale, setLocale } = useI18n();
+const localePath = useLocalePath();
+const lang = computed({
+  get() {
+    return locale.value;
+  },
+  set(v) {
+    setLocale(v);
+  },
+});
 </script>
