@@ -3,9 +3,16 @@
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
       {{ $t("featuredProjects") }}
     </h2>
-    <div class="space-y-4">
+    <div class="space-y-4" v-if="lang === 'en'">
       <AppProjectCard
-        v-for="(project, id) in projects"
+        v-for="(project, id) in projectsEn"
+        :key="id"
+        :project="project"
+      />
+    </div>
+    <div class="space-y-4" v-if="lang === 'zh'">
+      <AppProjectCard
+        v-for="(project, id) in projectsZh"
         :key="id"
         :project="project"
       />
@@ -24,20 +31,24 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
 
-let projects = ref<any>([]);
+let lang = ref<string>(locale.value);
+let projectsEn = ref<any>([]);
+let projectsZh = ref<any>([]);
 
-const loadData = async (lang: string = "en") => {
-  const { data } = await useAsyncData("projects-home", () =>
-    queryContent(`${lang}/projects`).sort({ published: -1 }).limit(3).find()
-  );
-  projects.value = data.value;
-};
-loadData(locale.value);
+const { data: dataEn } = await useAsyncData("projects-home", () =>
+  queryContent(`en/projects`).sort({ published: -1 }).limit(3).find()
+);
+projectsEn.value = dataEn.value;
+
+const { data: dataZh } = await useAsyncData("projects-home", () =>
+  queryContent(`zh/projects`).sort({ published: -1 }).limit(3).find()
+);
+projectsZh.value = dataZh.value;
 
 watch(
   () => locale,
   async (newLocale) => {
-    loadData(newLocale.value);
+    lang.value = newLocale.value;
   }
 );
 </script>
