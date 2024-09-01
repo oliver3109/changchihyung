@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
-      <!-- RECENT ARTICLES -->
       {{ $t("recentArticles") }}
     </h2>
     <ul class="space-y-16">
@@ -23,11 +22,20 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
 
-const { data: articles } = await useAsyncData("articles-home", () =>
-  queryContent(`${locale.value}/articles`)
-    .sort({ published: -1 })
-    .limit(3)
-    .only(["title", "description", "published", "slug", "_path"])
-    .find()
+let articles = ref<any>([]);
+
+const loadData = async (lang: string = "en") => {
+  const { data } = await useAsyncData("articles-home", () =>
+    queryContent(`/${lang}/articles`).sort({ published: -1 }).limit(3).find()
+  );
+  articles.value = data.value;
+};
+loadData(locale.value);
+
+watch(
+  () => locale,
+  async (newLocale) => {
+    loadData(newLocale.value);
+  }
 );
 </script>

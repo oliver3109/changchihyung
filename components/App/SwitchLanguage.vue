@@ -1,14 +1,16 @@
 <script setup>
-const { locale, setLocale } = useI18n();
+const { locale, setLocale, setLocaleCookie } = useI18n();
 
 const lang = computed({
   get() {
     return locale.value;
   },
-  set(v) {
-    setLocale(v);
-  },
 });
+
+const switchLocale = (v) => {
+  setLocale(v);
+  setLocaleCookie(v);
+};
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const lang = computed({
   >
     <button
       class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
-      @click="lang = lang == 'zh' ? 'en' : 'zh'"
+      @click="switchLocale(lang == 'zh' ? 'en' : 'zh')"
     >
       <Icon
         aria-hidden="true"

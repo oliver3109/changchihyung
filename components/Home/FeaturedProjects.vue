@@ -24,7 +24,20 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
 
-const { data: projects } = await useAsyncData("projects-home", () =>
-  queryContent(`${locale.value}/projects`).limit(3).find()
+let projects = ref<any>([]);
+
+const loadData = async (lang: string = "en") => {
+  const { data } = await useAsyncData("projects-home", () =>
+    queryContent(`${lang}/projects`).sort({ published: -1 }).limit(3).find()
+  );
+  projects.value = data.value;
+};
+loadData(locale.value);
+
+watch(
+  () => locale,
+  async (newLocale) => {
+    loadData(newLocale.value);
+  }
 );
 </script>
