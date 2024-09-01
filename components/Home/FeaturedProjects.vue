@@ -45,10 +45,13 @@ const { data: dataZh } = await useAsyncData("projects-home", () =>
 );
 projectsZh.value = dataZh.value;
 
-watch(
-  () => locale,
-  async (newLocale) => {
-    lang.value = newLocale.value;
-  }
-);
+const nuxtApp = useNuxtApp();
+nuxtApp.$i18n.onBeforeLanguageSwitch = (
+  oldLocale: any,
+  newLocale: any,
+  isInitialSetup: any,
+  nuxtApp: any
+) => {
+  lang.value = newLocale;
+};
 </script>
