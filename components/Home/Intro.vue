@@ -21,7 +21,8 @@
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
-        2024年，张智勇创办了<strong>幽视科技</strong>，专注于AR、VR、MR及元宇宙技术的创新工作室。
+        2024年，张智勇创办了<strong>幽视科技</strong>，专注于
+        AR、VR、MR、Web/小程序AR一站式定制类开发及元宇宙技术的创新工作室。
       </p>
     </div>
     <div v-if="lang == 'en'">
@@ -39,7 +40,8 @@
       <p class="text-gray-900 dark:text-gray-400">
         <br />
         In 2024, Oliver Chang founded <strong>Youshi Technology</strong>, a
-        studio focused on innovation in AR, VR, MR, and Metaverse technologies.
+        studio focused on innovation in Web3D/WebGL、AR, VR, MR, and Metaverse
+        technologies.
       </p>
     </div>
   </div>

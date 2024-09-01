@@ -12,7 +12,7 @@
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
         :label="$t('allArticles') + ' &rarr;'"
-        to="/articles"
+        :to="`${locale}/articles`"
         variant="link"
         color="gray"
       />
