@@ -9,7 +9,7 @@
       </h3>
       <p class="text-gray-400 text-sm">{{ project.description }}</p>
     </div>
-    <img class="max-w-full" :src="project.thumbnail"  />
+    <img class="max-w-full" :src="project.thumbnail" />
   </NuxtLink>
 </template>
 

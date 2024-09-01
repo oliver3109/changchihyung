@@ -3,16 +3,16 @@
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
       {{ $t("featuredProjects") }}
     </h2>
-    <div class="space-y-4" v-if="lang === 'en'">
+    <div class="space-y-4">
       <AppProjectCard
-        v-for="(project, id) in projectsEn"
+        v-if="data && locale == 'en'"
+        v-for="(project, id) in data[0]"
         :key="id"
         :project="project"
       />
-    </div>
-    <div class="space-y-4" v-if="lang === 'zh'">
       <AppProjectCard
-        v-for="(project, id) in projectsZh"
+        v-if="data && locale == 'zh'"
+        v-for="(project, id) in data[1]"
         :key="id"
         :project="project"
       />
@@ -31,37 +31,15 @@
 <script lang="ts" setup>
 const { locale } = useI18n();
 
-let _lang = locale.value;
-const lang = computed({
-  get() {
-    return _lang;
-  },
-  set(v) {
-    _lang = v;
-  },
+const { data } = await useAsyncData("projects-home", () => {
+  const p1 = queryContent(`en/projects`)
+    .sort({ published: -1 })
+    .limit(3)
+    .find();
+  const p2 = queryContent(`zh/projects`)
+    .sort({ published: -1 })
+    .limit(3)
+    .find();
+  return Promise.all([p1, p2]);
 });
-let projectsEn = ref<any>([]);
-let projectsZh = ref<any>([]);
-
-const { data: dataEn } = await useAsyncData("projects-home", () =>
-  queryContent(`en/projects`).sort({ published: -1 }).limit(3).find()
-);
-projectsEn.value = dataEn.value;
-
-const { data: dataZh } = await useAsyncData("projects-home", () =>
-  queryContent(`zh/projects`).sort({ published: -1 }).limit(3).find()
-);
-projectsZh.value = dataZh.value;
-
-const nuxtApp = useNuxtApp();
-
-nuxtApp.$i18n.onLanguageSwitched = (
-  oldLocale: any,
-  newLocale: any,
-  isInitialSetup: any,
-  nuxtApp: any
-) => {
-  console.log("newLocale", newLocale);
-  lang.value = newLocale;
-};
 </script>
