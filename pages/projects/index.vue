@@ -3,11 +3,18 @@
     <AppHeader
       class="mb-12"
       :title="$t('project')"
-      :description="description"
+      :description="$t('allProjectsDescription')"
     />
     <div class="space-y-4">
       <AppProjectCard
-        v-for="(project, id) in projects"
+        v-if="data && locale == 'en'"
+        v-for="(project, id) in data[0]"
+        :key="id"
+        :project="project"
+      />
+      <AppProjectCard
+        v-if="data && locale == 'zh'"
+        v-for="(project, id) in data[1]"
         :key="id"
         :project="project"
       />
@@ -16,25 +23,15 @@
 </template>
 
 <script setup>
-const { locale } = useI18n();
-
-const lang = computed({
-  get() {
-    return locale.value;
-  },
-});
-
-const description =
-  lang.value == "zh"
-    ? "这些年来，我做了很多项目，但这些是我最自豪的。"
-    : "Over the years, I have worked on many projects, but these are the ones I am most proud of.";
-
+const { locale, t } = useI18n();
 useSeoMeta({
   title: "Projects 项目 | Oliver Chang",
-  description,
+  description: t("allProjectsDescription"),
 });
 
-const { data: projects } = await useAsyncData("projects-all", () =>
-  queryContent(`${lang.value}/projects`).find()
-);
+const { data } = await useAsyncData("projects-all", () => {
+  const p1 = queryContent(`en/projects`).find();
+  const p2 = queryContent(`zh/projects`).find();
+  return Promise.all([p1, p2]);
+});
 </script>

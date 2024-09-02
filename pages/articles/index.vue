@@ -3,10 +3,23 @@
     <AppHeader
       class="mb-16"
       :title="$t('article')"
-      :description="description"
+      :description="$t('allArticlesDescription')"
     />
     <ul class="space-y-16">
-      <li v-for="(article, id) in articles" :key="id">
+      <li
+        v-if="data && locale == 'en'"
+        v-for="(article, id) in data[0]"
+        :key="id"
+      >
+        <AppArticleCard :article="article" />
+      </li>
+    </ul>
+    <ul class="space-y-16">
+      <li
+        v-if="data && locale == 'zh'"
+        v-for="(article, id) in data[1]"
+        :key="id"
+      >
         <AppArticleCard :article="article" />
       </li>
     </ul>
@@ -14,24 +27,16 @@
 </template>
 
 <script setup>
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
-const lang = computed({
-  get() {
-    return locale.value;
-  },
-});
-
-const description =
-  lang.value == "zh"
-    ? "我所有关于编程、AR/VR/MR技术等的长篇想法都是按时间顺序收集的。"
-    : "All of my lengthy ideas about programming, AR/VR/MR technology, etc. are collected in chronological order.";
 useSeoMeta({
-  title: "Articles 文章 | Oliver Chang",
-  description,
+  title: "Projects 项目 | Oliver Chang",
+  description: t("allArticlesDescription"),
 });
 
-const { data: articles } = await useAsyncData("all-articles", () =>
-  queryContent(`${lang.value}/articles`).sort({ published: -1 }).find()
-);
+const { data } = await useAsyncData("all-articles", () => {
+  const p1 = queryContent(`en/articles`).find();
+  const p2 = queryContent(`zh/articles`).find();
+  return Promise.all([p1, p2]);
+});
 </script>
