@@ -1,32 +1,38 @@
 <template>
   <main class="min-h-screen">
-    <AppHeader class="mb-12" :title="$t('art')" :description="description" />
+    <AppHeader
+      class="mb-12"
+      :title="$t('art')"
+      :description="$t('allArtDescription')"
+    />
     <div class="space-y-24">
-      <AppGenerativeArtCard v-for="(art, id) in arts" :key="id" :art="art" />
+      <AppGenerativeArtCard
+        v-if="data && locale == 'en'"
+        v-for="(art, id) in data[0]"
+        :key="id"
+        :art="art"
+      />
+      <AppGenerativeArtCard
+        v-if="data && locale == 'zh'"
+        v-for="(art, id) in data[1]"
+        :key="id"
+        :art="art"
+      />
     </div>
   </main>
 </template>
 
 <script setup>
-const { locale } = useI18n();
-
-const lang = computed({
-  get() {
-    return locale.value;
-  },
-});
-
-const description =
-  lang.value == "zh"
-    ? "我在空闲时间用 p5.js 做了一些算法生成式艺术。"
-    : "I have created some algorithmic generative art using p5.js in my free time.";
+const { locale, t } = useI18n();
 
 useSeoMeta({
   title: "Art 艺术 | Oliver Chang",
-  description,
+  description: t("allArtDescription"),
 });
 
-const { data: arts } = await useAsyncData("arts", () =>
-  queryContent(`${lang.value}/arts`).find()
-);
+const { data } = await useAsyncData("arts", () => {
+  const p1 = queryContent(`en/arts`).find();
+  const p2 = queryContent(`zh/arts`).find();
+  return Promise.all([p1, p2]);
+});
 </script>
