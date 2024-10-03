@@ -36,11 +36,11 @@ const links = [
     url: "https://github.com/oliver3109",
     icon: "mdi:github",
   },
-  {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/oliver3109/",
-    icon: "mdi:linkedin",
-  },
+  // {
+  //   name: "Linkedin",
+  //   url: "https://www.linkedin.com/in/oliver3109/",
+  //   icon: "mdi:linkedin",
+  // },
   // {
   //   name: "Telegram",
   //   url: "https://t.me/oliver3109",

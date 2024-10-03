@@ -16,7 +16,7 @@
     <div v-if="lang == 'zh'">
       <p class="text-gray-900 dark:text-gray-400">
         张智勇是一位<strong>工程师、极客和艺术创作者</strong>，自16岁开始编程，至今已有十年。他熟悉多种编程语言，如C、C++、C#、Java和JavaScript，并擅长使用three.js、Unity等三维引擎，同时具备Arduino编程的经验。
-        他对创新和独特的事物充满热情，尽管拥有扎实的工程背景，他始终在突破专业边界，积极探索艺术、技术与自然科学的融合。在工作之余，他创作了一系列独具风格的计算机艺术作品和装置艺术，展现了他对技术与艺术结合的深刻理解。
+        他对创新和独特的事物充满热情，尽管拥有扎实的工程背景，他始终在突破专业边界，积极探索艺术、技术与自然科学的融合。在工作之余，他还创作了一系列独具风格的计算机艺术作品和装置艺术。
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
@@ -35,8 +35,7 @@
         continues to push the boundaries of his engineering background, actively
         exploring the intersection of art, technology, and natural sciences. In
         his spare time, he has created a series of distinctive computer art and
-        installation pieces, reflecting his deep understanding of the fusion
-        between technology and art.
+        installation pieces.
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
@@ -53,7 +52,7 @@
 useSeoMeta({
   title: "OLIVERCHANG 张智勇",
   description:
-    "Oliver Chang is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including C, C++, C#, Java, and JavaScript, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, Oliver Chang continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces, reflecting his deep understanding of the fusion between technology and art.",
+    "Oliver Chang is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including C, C++, C#, Java, and JavaScript, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, Oliver Chang continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces.",
 });
 
 const { locale, setLocale } = useI18n();
