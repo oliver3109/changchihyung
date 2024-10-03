@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     inlineDynamicImports: true,
     prerender: {
       autoSubfolderIndex: false,
+      failOnError: false,
     },
     output: {
       dir: "output",
