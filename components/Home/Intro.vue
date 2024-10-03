@@ -15,33 +15,35 @@
     </h1>
     <div v-if="lang == 'zh'">
       <p class="text-gray-900 dark:text-gray-400">
-        张智勇是一位<strong>工程师、创业者、艺术创作者</strong>，自16岁起便开始编程，至今已有十年。他精通多种编程语言，包括C、C++、C#、Java
-        以及 JavaScript，熟悉多种三维引擎如
-        three.js、Unity等。他对新奇而独特的事物充满热情，虽然他有着程序员的背景，但他对感性的艺术同样怀有深厚的热爱。自接触算法生成式艺术以来，在工作之余制作出一系列独具特色的计算机艺术作品。
+        张智勇是一位<strong>工程师、极客和艺术创作者</strong>，自16岁开始编程，至今已有十年。他熟悉多种编程语言，如C、C++、C#、Java和JavaScript，并擅长使用three.js、Unity等三维引擎，同时具备Arduino编程的经验。
+        他对创新和独特的事物充满热情，尽管拥有扎实的工程背景，他始终在突破专业边界，积极探索艺术、技术与自然科学的融合。在工作之余，他创作了一系列独具风格的计算机艺术作品和装置艺术，展现了他对技术与艺术结合的深刻理解。
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
-        2024年，张智勇创办了<strong>幽视科技</strong>，专注于
-        AR、VR、MR、Web/小程序AR一站式定制类开发及元宇宙技术的创新工作室。
+        近年来，张智勇专注于AR和XR领域，不断提升技术能力。他与合作伙伴一起完成了多个城市级AR地标项目，积累了丰富的实践经验。
       </p>
     </div>
     <div v-if="lang == 'en'">
       <p class="text-gray-900 dark:text-gray-400">
         Oliver Chang is an
-        <strong>engineer, entrepreneur, and art creators</strong> who began
-        programming at the age of 16 and has been doing so for ten years. He is
-        proficient in various programming languages, including C, C++, C#, Java,
-        and JavaScript, and is familiar with several 3D engines such as three.js
-        and Unity. He is passionate about unique and innovative things. Although
-        he has a background as a programmer, he also has a deep love for
-        expressive art. Since discovering algorithmic generative art, he has
-        created a series of distinctive computer art pieces in his spare time.
+        <strong>engineer, geek, and artistic creator</strong> who began
+        programming at the age of 16, and has accumulated a decade of
+        experience. He is proficient in several programming languages, including
+        C, C++, C#, Java, and JavaScript, and is skilled in using 3D engines
+        such as three.js and Unity, with additional expertise in Arduino
+        programming.Passionate about innovation and unique ideas, Oliver Chang
+        continues to push the boundaries of his engineering background, actively
+        exploring the intersection of art, technology, and natural sciences. In
+        his spare time, he has created a series of distinctive computer art and
+        installation pieces, reflecting his deep understanding of the fusion
+        between technology and art.
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
-        In 2024, Oliver Chang founded <strong>Youshi Technology</strong>, a
-        studio focused on innovation in Web3D/WebGL、AR, VR, MR, and Metaverse
-        technologies.
+        In recent years, Oliver Chang has focused on AR and XR, steadily
+        building his technical expertise. Together with his partners, he has
+        worked on numerous creative and engaging city-level AR landmark
+        projects, gaining extensive hands-on experience.
       </p>
     </div>
   </div>
@@ -51,7 +53,7 @@
 useSeoMeta({
   title: "OLIVERCHANG 张智勇",
   description:
-    "Oliver Chang is an engineer, entrepreneur, and art creators who began programming at the age of 16 and has been doing so for ten years. He is proficient in various programming languages, including C, C++, C#, Java, and JavaScript, and is familiar with several 3D engines such as three.js and Unity. He is passionate about unique and innovative things. Although he has a background as a programmer, he also has a deep love for expressive art. Since discovering algorithmic generative art, he has created a series of distinctive computer art pieces in his spare time. In 2024, Oliver Chang founded Youshi Technology, a studio focused on innovation in AR, VR, MR, and Metaverse technologies.",
+    "Oliver Chang is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including C, C++, C#, Java, and JavaScript, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, Oliver Chang continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces, reflecting his deep understanding of the fusion between technology and art.",
 });
 
 const { locale, setLocale } = useI18n();
