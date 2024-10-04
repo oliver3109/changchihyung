@@ -1,7 +1,7 @@
 // middleware/redirect.js
 export default defineNuxtRouteMiddleware((to, from) => {
   // 获取用户的首选语言
-  const defaultLang = "zh";
+  const defaultLang = "en";
 
   // 如果当前路由是首页（/）
   if (to.path === "/") {
