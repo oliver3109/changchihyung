@@ -56,7 +56,8 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: ["en", "zh"], //配置语种
-    strategy: "prefix_and_default",
+    defaultLocale: "en",
+    strategy: "prefix",
     vueI18n: "./i18n.config.ts", // 通过vueI18n配置
   },
 });
