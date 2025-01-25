@@ -37,15 +37,15 @@ const links = [
     icon: "mdi:github",
   },
   {
-    name: "Openprocessing",
+    name: "OpenProcessing",
     url: "https://openprocessing.org/user/324595",
     icon: "mdi:web",
   },
-  // {
-  //   name: "Linkedin",
-  //   url: "https://www.linkedin.com/in/oliver3109/",
-  //   icon: "mdi:linkedin",
-  // },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/oliver3109/",
+    icon: "mdi:linkedin",
+  },
   // {
   //   name: "Telegram",
   //   url: "https://t.me/oliver3109",
