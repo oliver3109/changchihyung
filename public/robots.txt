@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://chihyungchang.com/sitemap_index.xml

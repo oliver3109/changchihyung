@@ -25,6 +25,7 @@
     "@iconify-json/lucide": "1.1.145",
     "@nuxt/image": "1.1.0",
     "@nuxt/ui": "2.11.1",
+    "@nuxtjs/sitemap": "^7.2.10",
     "vue-use-fixed-header": "^2.0.0"
   },
   "packageManager": "yarn@1.22.21"

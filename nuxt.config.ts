@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
+    "@nuxtjs/sitemap",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -54,10 +55,18 @@ export default defineNuxtConfig({
       deploy: "npx wrangler deploy",
     },
   },
+  sitemap: {
+    // automatically chunk into multiple sitemaps
+    sitemaps: true,
+  },
   i18n: {
-    locales: ["en", "zh"], //配置语种
+    baseUrl: "https://chihyungchang.com",
+    locales: [
+      { code: "en", iso: "en-US", language: "en-US" },
+      { code: "zh", iso: "zh-Hans", language: "zh-Hans" },
+    ],
     defaultLocale: "en",
     strategy: "prefix",
-    vueI18n: "./i18n.config.ts", // 通过vueI18n配置
+    vueI18n: "./i18n.config.ts",
   },
 });
