@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
-    "@nuxtjs/sitemap",
+    // "@nuxtjs/sitemap",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -56,10 +56,10 @@ export default defineNuxtConfig({
       deploy: "npx wrangler deploy",
     },
   },
-  sitemap: {
-    // automatically chunk into multiple sitemaps
-    sitemaps: true,
-  },
+  // sitemap: {
+  //   // automatically chunk into multiple sitemaps
+  //   sitemaps: true,
+  // },
   i18n: {
     baseUrl: "https://chihyungchang.com",
     locales: [
