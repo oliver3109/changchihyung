@@ -10,6 +10,7 @@ dist
 # Node dependencies
 node_modules
 .yarn
+.yarnrc.yml
 
 # Logs
 logs

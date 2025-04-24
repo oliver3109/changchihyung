@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   experimental: { appManifest: false, payloadExtraction: true },
   modules: [
+    "@nuxt/scripts",
     "@nuxt/ui",
     "nuxt-icon",
     "@nuxtjs/google-fonts",
@@ -69,4 +70,5 @@ export default defineNuxtConfig({
     strategy: "prefix",
     vueI18n: "./i18n.config.ts",
   },
+  compatibilityDate: "2025-04-24",
 });
