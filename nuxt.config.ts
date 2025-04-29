@@ -70,4 +70,5 @@ export default defineNuxtConfig({
     strategy: "prefix",
     vueI18n: "./i18n.config.ts",
   },
+  compatibilityDate: "2025-04-24",
 });
