@@ -27,21 +27,21 @@
     </div>
     <div v-if="lang == 'en'">
       <p class="text-gray-900 dark:text-gray-400">
-        Oliver Chang is an
+        ZHI YONG ZHANG is an
         <strong>engineer, geek, and artistic creator</strong> who began
         programming at the age of 16, and has accumulated a decade of
         experience. He is proficient in several programming languages, including
         JavaScript, C# and Java, and is skilled in using 3D engines such as
         three.js and Unity, with additional expertise in Arduino programming.
-        Passionate about innovation and unique ideas, Oliver Chang continues to
-        push the boundaries of his engineering background, actively exploring
+        Passionate about innovation and unique ideas, ZHI YONG ZHANG continues
+        to push the boundaries of his engineering background, actively exploring
         the intersection of art, technology, and natural sciences. In his spare
         time, he has created a series of distinctive computer art and
         installation pieces.
       </p>
       <p class="text-gray-900 dark:text-gray-400">
         <br />
-        In recent years, Oliver Chang has focused on AR and XR, steadily
+        In recent years, ZHI YONG ZHANG has focused on AR and XR, steadily
         building his technical expertise. Together with his partners, he has
         worked on numerous creative and engaging city-level AR landmark
         projects, gaining extensive hands-on experience.
@@ -54,7 +54,7 @@
 useSeoMeta({
   title: "OLIVERCHANG 张智勇",
   description:
-    "Oliver Chang is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including JavaScript, C# and Java, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, Oliver Chang continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces.",
+    "ZHI YONG ZHANG is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including JavaScript, C# and Java, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, ZHI YONG ZHANG continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces.",
 });
 
 const { locale, setLocale } = useI18n();

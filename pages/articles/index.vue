@@ -30,7 +30,7 @@
 const { locale, t } = useI18n();
 
 useSeoMeta({
-  title: "Projects 项目 | Oliver Chang",
+  title: "Projects 项目 | ZHI YONG ZHANG",
   description: t("allArticlesDescription"),
 });
 

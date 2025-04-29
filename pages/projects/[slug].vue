@@ -19,7 +19,7 @@ const { slug } = route.params;
 useSeoMeta({
   ogImage: `https://chihyungchang.com/projects/${slug}.png`,
   twitterCard: "summary_large_image",
-  articleAuthor: "Oliver Chang",
+  articleAuthor: "ZHI YONG ZHANG",
 });
 
 const getReadableDate = (dateString) => {

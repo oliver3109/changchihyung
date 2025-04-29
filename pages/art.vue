@@ -26,7 +26,7 @@
 const { locale, t } = useI18n();
 
 useSeoMeta({
-  title: "Art 艺术 | Oliver Chang",
+  title: "Art 艺术 | ZHI YONG ZHANG",
   description: t("allArtDescription"),
 });
 
