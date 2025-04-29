@@ -52,7 +52,7 @@
 
 <script setup>
 useSeoMeta({
-  title: "OLIVERCHANG 张智勇",
+  title: "ZHI YONG ZHANG 张智勇",
   description:
     "ZHI YONG ZHANG is an engineer, geek, and artistic creator who began programming at the age of 16, and has accumulated a decade of experience. He is proficient in several programming languages, including JavaScript, C# and Java, and is skilled in using 3D engines such as three.js and Unity, with additional expertise in Arduino programming.Passionate about innovation and unique ideas, ZHI YONG ZHANG continues to push the boundaries of his engineering background, actively exploring the intersection of art, technology, and natural sciences. In his spare time, he has created a series of distinctive computer art and installation pieces.",
 });
