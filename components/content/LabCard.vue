@@ -83,6 +83,17 @@ const tab = ref("preview");
 
 <style scoped>
 .active-tab {
-  @apply after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-primary-500 after:bottom-[-9px] after:left-0 after:pointer-events-none;
+  position: relative;
+}
+
+.active-tab::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #14b8a6; /* primary-500 color */
+  bottom: -9px;
+  left: 0;
+  pointer-events: none;
 }
 </style>

@@ -22,7 +22,7 @@
 <script setup>
 const description = "我在空闲时间用UI做了一些随机实验。";
 useSeoMeta({
-  title: "Lab | Oliver Chang",
+  title: "Lab | ZHI YONG ZHANG",
   description,
 });
 </script>

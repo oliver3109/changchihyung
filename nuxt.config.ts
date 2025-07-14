@@ -1,22 +1,26 @@
 export default defineNuxtConfig({
+  compatibilityDate: "2025-07-14",
   devtools: { enabled: false },
   experimental: { appManifest: false, payloadExtraction: true },
+
   modules: [
-    "@nuxt/scripts",
     "@nuxt/ui",
     "nuxt-icon",
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
     "@nuxt/image",
     "@nuxt/content",
-    "@nuxthq/studio",
+    // "@nuxt/scripts", // 暂时移除，可能导致构建问题
+    // "@nuxthq/studio", // 暂时禁用，可能导致预渲染问题
     "@vueuse/nuxt",
+    // "@nuxtjs/sitemap", // 暂时禁用，可能导致预渲染问题
     "@nuxtjs/i18n",
-    "@nuxtjs/sitemap",
   ],
   ui: {
-    icons: ["heroicons", "lucide"],
+    // Icon configuration is handled by nuxt-icon module and @iconify-json packages
   },
+  // 添加 CSS 配置
+  css: ["~/assets/scss/main.scss"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -42,9 +46,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     inlineDynamicImports: true,
+    // 添加预渲染配置以避免卡住
     prerender: {
-      autoSubfolderIndex: false,
-      failOnError: false,
+      crawlLinks: false, // 禁用自动爬取链接
+      routes: ["/"], // 只预渲染首页
     },
     output: {
       dir: "output",
@@ -56,10 +61,10 @@ export default defineNuxtConfig({
       deploy: "npx wrangler deploy",
     },
   },
-  sitemap: {
-    // automatically chunk into multiple sitemaps
-    sitemaps: true,
-  },
+  // sitemap: {
+  //   // automatically chunk into multiple sitemaps
+  //   sitemaps: true,
+  // },
   i18n: {
     baseUrl: "https://chihyungchang.com",
     locales: [

@@ -2,6 +2,8 @@ export default defineAppConfig({
   ui: {
     primary: "teal",
     gray: "neutral",
+    // 确保 Nuxt UI 能正确生成所有相关的 CSS 类
+    safelistColors: ["primary", "teal"],
     formGroup: {
       help: "text-xs mt-1 text-gray-500 dark:text-gray-400",
       error: "text-xs mt-1 text-red-500 dark:text-red-400",
