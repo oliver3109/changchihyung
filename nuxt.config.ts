@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  compatibilityDate: "2025-07-14",
   devtools: { enabled: false },
   experimental: { appManifest: false, payloadExtraction: true },
   modules: [
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "@nuxt/image",
     "@nuxt/content",
-    "@nuxt/scripts",
+    // "@nuxt/scripts", // 暂时移除，可能导致构建问题
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "@nuxtjs/sitemap",
@@ -17,6 +18,8 @@ export default defineNuxtConfig({
   ui: {
     icons: ["heroicons", "lucide"],
   },
+  // 添加 CSS 配置
+  css: ["~/assets/scss/main.scss"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -42,9 +45,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     inlineDynamicImports: true,
+    // 完全禁用预渲染
     prerender: {
-      autoSubfolderIndex: false,
-      failOnError: false,
+      routes: [],
     },
     output: {
       dir: "output",

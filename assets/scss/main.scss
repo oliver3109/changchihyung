@@ -1,3 +1,59 @@
+@tailwind base;
+
+/* 在 components 层之前定义 outline-primary 类 */
+@layer components {
+  .outline-primary {
+    outline-color: #14b8a6;
+  }
+
+  .outline-primary-50 {
+    outline-color: #f0fdfa;
+  }
+
+  .outline-primary-100 {
+    outline-color: #ccfbf1;
+  }
+
+  .outline-primary-200 {
+    outline-color: #99f6e4;
+  }
+
+  .outline-primary-300 {
+    outline-color: #5eead4;
+  }
+
+  .outline-primary-400 {
+    outline-color: #2dd4bf;
+  }
+
+  .outline-primary-500 {
+    outline-color: #14b8a6;
+  }
+
+  .outline-primary-600 {
+    outline-color: #0d9488;
+  }
+
+  .outline-primary-700 {
+    outline-color: #0f766e;
+  }
+
+  .outline-primary-800 {
+    outline-color: #115e59;
+  }
+
+  .outline-primary-900 {
+    outline-color: #134e4a;
+  }
+
+  .outline-primary-950 {
+    outline-color: #042f2e;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
 }

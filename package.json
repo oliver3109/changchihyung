@@ -18,16 +18,18 @@
     "@nuxtjs/i18n": "8.0.0",
     "@nuxtjs/sitemap": "^5.0.0",
     "@types/youtube": "^0.1.0",
-    "nuxt": "3.9.1",
+    "nuxt": "^3.17.7",
     "nuxt-icon": "0.6.7",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
     "@iconify-json/lucide": "1.1.145",
     "@nuxt/image": "1.1.0",
-    "@nuxt/ui": "2.11.1",
+    "@nuxt/ui": "^3.2.0",
     "vue-use-fixed-header": "^2.0.0"
   },
   "packageManager": "yarn@1.22.21"
