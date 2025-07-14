@@ -18,7 +18,7 @@
     "@nuxtjs/i18n": "8.0.0",
     "@nuxtjs/sitemap": "^5.0.0",
     "@types/youtube": "^0.1.0",
-    "nuxt": "^3.17.7",
+    "nuxt": "3.13.2",
     "nuxt-icon": "0.6.7",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
@@ -29,7 +29,7 @@
   "dependencies": {
     "@iconify-json/lucide": "1.1.145",
     "@nuxt/image": "1.1.0",
-    "@nuxt/ui": "^3.2.0",
+    "@nuxt/ui": "2.18.7",
     "vue-use-fixed-header": "^2.0.0"
   },
   "packageManager": "yarn@1.22.21"
