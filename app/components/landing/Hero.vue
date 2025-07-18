@@ -31,6 +31,7 @@ defineProps<{
           duration: 0.6,
           delay: 0.1
         }"
+        :in-view-options="{ once: true }"
       >
         <img
           src="/avatar.jpeg"
@@ -59,6 +60,7 @@ defineProps<{
           duration: 0.6,
           delay: 0.1
         }"
+        :in-view-options="{ once: true }"
       >
         {{ page.title }}
       </Motion>
@@ -83,6 +85,7 @@ defineProps<{
           duration: 0.6,
           delay: 0.3
         }"
+        :in-view-options="{ once: true }"
       >
         {{ page.description }}
       </Motion>
@@ -107,6 +110,7 @@ defineProps<{
           duration: 0.6,
           delay: 0.5
         }"
+        :in-view-options="{ once: true }"
       >
         <div
           v-if="page.hero.links"
@@ -166,6 +170,7 @@ defineProps<{
             duration: 0.6,
             delay: 0.5 + index * 0.1
           }"
+          :in-view-options="{ once: true }"
         >
           <UButton
             v-bind="{
