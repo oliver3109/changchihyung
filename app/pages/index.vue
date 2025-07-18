@@ -33,6 +33,7 @@ useSeoMeta({
         transform: 'translateY(0)'
       }"
       :transition="{ delay: 0.4 + 0.2 }"
+      :in-view-options="{ once: true }"
     >
       <UPageSection
         :ui="{

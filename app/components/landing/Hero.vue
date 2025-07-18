@@ -22,7 +22,7 @@ defineProps<{
           opacity: 0,
           filter: 'blur(20px)'
         }"
-        :animate="{
+        :while-in-view="{
           scale: 1,
           opacity: 1,
           filter: 'blur(0px)'
@@ -50,7 +50,7 @@ defineProps<{
           opacity: 0,
           filter: 'blur(20px)'
         }"
-        :animate="{
+        :while-in-view="{
           scale: 1,
           opacity: 1,
           filter: 'blur(0px)'
@@ -74,7 +74,7 @@ defineProps<{
           opacity: 0,
           filter: 'blur(20px)'
         }"
-        :animate="{
+        :while-in-view="{
           scale: 1,
           opacity: 1,
           filter: 'blur(0px)'
@@ -98,7 +98,7 @@ defineProps<{
           opacity: 0,
           filter: 'blur(20px)'
         }"
-        :animate="{
+        :while-in-view="{
           scale: 1,
           opacity: 1,
           filter: 'blur(0px)'
@@ -157,7 +157,7 @@ defineProps<{
             opacity: 0,
             filter: 'blur(20px)'
           }"
-          :animate="{
+          :while-in-view="{
             scale: 1,
             opacity: 1,
             filter: 'blur(0px)'
@@ -196,7 +196,7 @@ defineProps<{
             opacity: 0,
             filter: 'blur(20px)',
           }"
-          :animate="{
+          :while-in-view="{
             scale: 1,
             opacity: 1,
             filter: 'blur(0px)',

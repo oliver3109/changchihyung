@@ -77,27 +77,27 @@ experience:
         url: "https://www.chinatelecom-h.com/en/global/home.php"
         color: "#007396"
 testimonials:
-  - quote: "Oliver transformed our outdated platform into a modern Vue-powered app that runs faster, looks better, and is easier to maintain. His work ethic and code quality exceeded expectations."
+  - quote: "Mr. Zhang brought exceptional technical expertise that helped us successfully expand into the XR sector. His contribution has injected new momentum into our development in virtual and augmented reality, making him a highly trusted technology partner."
     author:
-      name: 'Davide Russo'
-      description: 'CTO at MilanoTech SRL'
+      name: 'Cheng Hao'
+      description: 'Chairman of Chengshi Vision Co., Ltd'
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Oliver has been a game-changer. His ability to take technical ownership of full-stack systems let us move twice as fast without compromising quality."
+        src: '/testimonials/ChenHao.jpg'
+        srcset: '/testimonials/ChenHao.jpg'
+  - quote: "We've had the pleasure of working with Oliver on several 8thWall-based AR projects, starting with a particularly tricky Android/WeChat bug he resolved with impressive speed and precision. His deep understanding of web-based XR and his ability to solve problems independently made him an invaluable part of our extended team. Oliver’s work is consistently clean, well-documented, and delivered on time — exactly what you hope for in a remote collaborator."
     author:
-      name: 'Grace Lin'
-      description: 'Product Manager at UK Startup'
+      name: 'Phil'
+      description: 'Technical Director, Created by Catalyst'
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Oliver delivered a full front-end rewrite with pixel-perfect precision. His ability to align tech with business goals makes him a rare developer who thinks strategically."
+        src: '/testimonials/Phil.png'
+        srcset: '/testimonials/Phil.png'
+  - quote: "Oliver joined our AR team through Phil’s recommendation and quickly proved to be one of the most reliable engineers we've worked with. His contributions to our recent high-profile project for Rolex exceeded both client expectations and user feedback benchmarks. Oliver brings not just technical skill, but clear communication, strong ownership, and a deep sense of craft. We look forward to many more collaborations with him."
     author:
-      name: 'Amanda Shore'
-      description: 'CEO, New York-based Jewelry Platform'
+      name: 'Gabriel'
+      description: 'Director, Created by Catalyst'
       avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        src: '/testimonials/Gabriel.jpg'
+        srcset: '/testimonials/Gabriel.jpg'
 blog:
   title: "Latest Articles"
   description: "Some of my recent thoughts on software engineering, freelancing, and tech leadership."
