@@ -1,0 +1,31 @@
+title: About Me
+description: Learn more about my journey as an independent full-stack developer, my engineering mindset, and why I’m passionate about building fast, maintainable digital products for teams around the world.
+content: |
+  Hi, I’m **Oliver Zhang** — a **full-stack developer with a strong front-end focus**, currently working remotely with clients across the **US, UK, China, and Europe**. Over the past few years, I’ve had the privilege of **building and delivering scalable digital solutions** for startups, founders, and growing teams.
+
+  My journey started at **16** when I wrote my first lines of code. What began as a hobby quickly turned into a career, driven by a love for **problem-solving** and **clean, purposeful code**. Since then, I’ve built **custom dashboards, SaaS platforms, and e-commerce front ends** using tools like **Vue.js, Nuxt, Node.js**, and **Java**.
+
+  ### My Engineering Approach  
+  
+  I approach software development as both a **craft and a collaboration**. My goal is to write code that is **fast, scalable, and maintainable** — and to do it in a way that supports **product goals**, **team workflows**, and **long-term growth**.
+
+  Whether I’m building a product from scratch or stepping into an existing codebase, I value **transparency**, **clean architecture**, and **thoughtful decisions**.
+
+  I often serve not just as a developer, but as a **technical problem-solver** — helping early-stage teams align their ideas with **practical, production-ready solutions**.
+
+  ### What Keeps Me Going  
+  
+  What drives me is the opportunity to **build things that matter** — tools that help real users, and systems that make sense. I enjoy taking **complex challenges** and turning them into **clear, efficient code** that lasts.
+
+  There’s always more to learn in this field, and I love that. Every project is a chance to **grow**, and every problem is a **puzzle worth solving**.
+
+  ### Beyond the Code  
+  
+  Outside of development, I enjoy **reading about system design**, exploring **cross-cultural communication** (especially in multilingual work settings), and spending time discovering the **little details that make both software — and life — more elegant**.
+
+  Thanks for stopping by. Feel free to **check out my work**, or **reach out if you’d like to build something together**.
+images:
+  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: My coffee workspace
+  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: My trip to Tokyo

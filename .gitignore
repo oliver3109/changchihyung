@@ -1,6 +1,5 @@
 # Nuxt dev/build outputs
 .output
-output
 .data
 .nuxt
 .nitro
@@ -9,8 +8,6 @@ dist
 
 # Node dependencies
 node_modules
-.yarn
-.yarnrc.yml
 
 # Logs
 logs
@@ -25,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# VSC
+.history

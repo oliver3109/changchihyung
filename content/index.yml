@@ -1,0 +1,161 @@
+seo:
+  title: "Oliver Zhang - Full Stack Software Consultant"
+  description: "Welcome to my portfolio! I'm ZHI YONG (Oliver) ZHANG, a seasoned full-stack engineer with a focus on front-end development. I build reliable, scalable solutions for global clients using Vue.js, Node.js, and beyond."
+title: "Hey, I'm Oliver Zhang Full Stack Software Consultant"
+description: "I design and code digital systems that feel fast, look clean, and scale with confidence — from front-end to back-end, and across time zones."
+hero:
+  links:
+    - label: "Contact me"
+      to: "mailto:oliver@drivenbyinfinite.com"
+      color: "neutral"
+  images:
+    - src: https://picsum.photos/468/468?random=1
+      alt: Random Image 1
+    - src: https://picsum.photos/468/468?random=2
+      alt: Random Image 2
+    - src: https://picsum.photos/468/468?random=3
+      alt: Random Image 3
+    - src: https://picsum.photos/468/468?random=4
+      alt: Random Image 4
+    - src: https://picsum.photos/468/468?random=5
+      alt: Random Image 5
+    - src: https://picsum.photos/468/468?random=6
+      alt: Random Image 6
+    - src: https://picsum.photos/468/468?random=7
+      alt: Random Image 7
+    - src: https://picsum.photos/468/468?random=8
+      alt: Random Image 8
+about:
+  title: "About Me"
+  description: |
+    I'm Oliver Zhang, a full-stack engineer with a front-end focus. Since I began coding at 16, I've built scalable digital products using a range of modern tools and languages.
+    As an independent developer, I've delivered 10+ international projects for clients in China, Italy, the UK, and the US — often acting as both engineer and technical problem-solver.
+    From SaaS platforms to e-commerce and custom dashboards, I build clean, stable, and scalable solutions.
+experience:
+  title: Work Experience
+  items:
+    - position: "Freelance / XR & Full-stack Engineer"
+      date: "2025 - Present"
+      company:
+        name: Created by Catalyst (UK)
+        logo: ""
+        url: "https://www.createdbycatalyst.com/"
+        color: "#0cccd7"
+    - position: "Freelance / Font-end Engineer"
+      date: "2024 - 2025"
+      company:
+        name: Aladia (Italy)
+        logo: ""
+        url: "https://www.aladia.io"
+        color: "#f0ca41"
+    - position: "Freelance / XR Developer"
+      date: "2023 - 2024"
+      company:
+        name: Guangdong Chance3d Technology Co., Ltd
+        logo: ""
+        url: "http://en.chance3d.com/"
+        color: "#000000"
+    - position: "Front-end Technical Experts"
+      date: "2021 - 2023"
+      company:
+        name: Shandong Chaoshi Self Owned Tourism Co., Ltd.
+        logo: ""
+        url: "https://www.cs-zjy.com/"
+        color: "#2e00dd"
+    - position: "Senior front-end Developer"
+      date: "2018 - 2020"
+      company:
+        name: Alibaba Group Holding Limited
+        logo: "i-simple-icons-alibabadotcom"
+        url: "https://www.alibaba.com/"
+        color: "#f60"
+    - position: "Java Software Developer"
+      date: "2017 - 2019"
+      company:
+        name: China Telecom Corporation Limited
+        logo: "i-simple-icons-java"
+        url: "https://www.chinatelecom-h.com/en/global/home.php"
+        color: "#007396"
+testimonials:
+  - quote: "Oliver transformed our outdated platform into a modern Vue-powered app that runs faster, looks better, and is easier to maintain. His work ethic and code quality exceeded expectations."
+    author:
+      name: 'Davide Russo'
+      description: 'CTO at MilanoTech SRL'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: "Working with Oliver has been a game-changer. His ability to take technical ownership of full-stack systems let us move twice as fast without compromising quality."
+    author:
+      name: 'Grace Lin'
+      description: 'Product Manager at UK Startup'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: "Oliver delivered a full front-end rewrite with pixel-perfect precision. His ability to align tech with business goals makes him a rare developer who thinks strategically."
+    author:
+      name: 'Amanda Shore'
+      description: 'CEO, New York-based Jewelry Platform'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+blog:
+  title: "Latest Articles"
+  description: "Some of my recent thoughts on software engineering, freelancing, and tech leadership."
+faq:
+  title: Frequently Asked Questions
+  description: Answers to common questions about my process and services.
+  categories:
+    - title: Services & Process
+      questions:
+        - label: What services do you offer?
+          content: |
+            I specialize in full-stack development with a front-end focus. My services include:
+            - Single-page applications (Vue.js, Nuxt.js)
+            - API development with Node.js
+            - E-commerce front-ends
+            - Admin dashboards
+            - SaaS MVPs
+            - Technical consulting and architecture design
+        - label: What's your typical workflow?
+          content: |
+            My process is collaborative and goal-oriented. It usually includes:
+            1. Initial discovery and requirement gathering
+            2. Technical evaluation and roadmap
+            3. Milestone-based development with regular updates
+            4. Deployment and documentation
+            I prioritize clean code, fast feedback loops, and scalable delivery.
+        - label: Can you work with designers or existing teams?
+          content: |
+            Absolutely. I'm experienced in remote collaboration and can seamlessly integrate with designers, back-end developers, and product teams. I’ve worked across time zones and cultures to ship global products.
+        - label: Do you offer long-term support?
+          content: |
+            Yes. I offer ongoing maintenance, feature development, and performance optimization. Retainer-based support is also available for clients who need consistent development time.
+    - title: Pricing & Timelines
+      questions:
+        - label: How much does a project typically cost?
+          content: |
+            Most full-stack projects fall between $5,000 and $25,000 depending on scope and complexity. For technical consulting or smaller tasks, I offer day rates and hourly billing as needed.
+        - label: What are your payment terms?
+          content: |
+            Typically, I require a 30–40% deposit to schedule the project. The remaining balance is split across milestones or paid upon final delivery. I accept bank transfers, Stripe, and PayPal.
+        - label: How long does a project take?
+          content: |
+            Timelines vary by scope:
+            - Small MVPs or UI components: 2–4 weeks
+            - Full-featured applications: 4–12 weeks
+            - Complex systems: 2–4 months
+            I provide a detailed schedule after the initial discovery phase.
+        - label: Do you offer ongoing support or retainers?
+          content: |
+            Definitely. I offer monthly retainer plans for clients who need continuous development, feature rollouts, or long-term support. Flexible options are available based on your needs.
+    - title: About Me
+      questions:
+        - label: What’s your background in software development?
+          content: |
+            I started coding at 16 and have since worked with clients across China, Italy, the UK, and the US. My core stack includes Vue.js, Node.js, JavaScript, and Java. I’ve delivered over 10 successful international projects as a solo developer.
+        - label: Do you work independently or as part of a team?
+          content: |
+            I operate as an independent developer, running a one-person software studio. That said, I collaborate frequently with designers, PMs, and dev teams to ship polished, production-ready software.
+        - label: What do you enjoy outside of coding?
+          content: |
+            I love learning new languages (both human and programming), reading about productivity and design, and exploring great cafés when I travel. I also contribute to open-source when I can.
