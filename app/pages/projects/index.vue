@@ -77,7 +77,8 @@ useSeoMeta({
     <!-- Projects Section -->
     <UPageSection
       :ui="{
-        container: 'py-2 sm:py-4 lg:py-8 overflow-hidden'
+        container:
+          'py-2 sm:py-4 lg:py-8 overflow-hidden flex flex-col gap-16 lg:gap-0'
       }"
     >
       <Motion
@@ -106,7 +107,7 @@ useSeoMeta({
                 {{ formatDate(project.date) }}
               </span>
             </div>
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-lg font-semibold mb-2">
               {{ project.title }}
             </h3>
             <p class="text-muted mb-4">
@@ -114,7 +115,7 @@ useSeoMeta({
             </p>
             <ULink
               :to="'/projects/' + project.url"
-              class="text-sm text-primary flex items-center"
+              class="text-sm text-primary flex items-center mb-4"
             >
               View Project
               <UIcon

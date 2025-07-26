@@ -47,3 +47,51 @@ body {
     transform: translateX(100%);
   }
 }
+
+.prose {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--ui-text-highlighted);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+    line-height: var(
+      --tw-leading,
+      var(--text-2xl--line-height)
+    );
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    line-height: var(
+      --tw-leading,
+      var(--text-xl--line-height)
+    );
+  }
+
+  P {
+    text-wrap: pretty;
+    margin-block: calc(var(--spacing) * 5);
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+  }
+
+  blockquote {
+    font-style: italic;
+    border-color: var(--ui-border-accented);
+    padding-inline-start: calc(var(--spacing) * 4);
+    border-inline-start-style: var(--tw-border-style);
+    border-inline-start-width: 4px;
+  }
+
+  hr {
+    border-color: var(--ui-border-accented);
+    border-width: 1px;
+    margin-block: calc(var(--spacing) * 10);
+  }
+}

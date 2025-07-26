@@ -17,6 +17,15 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  content: {
+    build: {
+      markdown: {
+        remarkPlugins: {},
+        rehypePlugins: {}
+      }
+    }
+  },
+
   future: {
     compatibilityVersion: 4
   },

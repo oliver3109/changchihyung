@@ -13,11 +13,14 @@ if (!page.value)
 const { data: surround } = await useAsyncData(
   `${route.path}-surround`,
   () =>
-    queryCollectionItemSurroundings('blog', route.path, {
-      fields: ['description']
-    })
+    queryCollectionItemSurroundings(
+      'projects',
+      route.path,
+      {
+        fields: ['description']
+      }
+    )
 )
-
 if (page.value.image) {
   defineOgImage({ url: page.value.image })
 }
@@ -82,7 +85,8 @@ const formatDate = (dateString: string) => {
         <div class="max-w-3xl mx-auto py-16">
           <ContentRenderer
             v-if="page.body"
-            :value="page.body"
+            class="prose"
+            :value="page"
           />
 
           <div
@@ -101,7 +105,10 @@ const formatDate = (dateString: string) => {
               "
             />
           </div>
-          <UContentSurround :surround />
+          <UContentSurround
+            v-if="surround"
+            :surround="surround"
+          />
         </div>
       </div>
     </UContainer>
