@@ -61,7 +61,7 @@ useSeoMeta({
         container: 'py-2 sm:py-4 lg:py-8 overflow-hidden'
       }"
     >
-      <MDC :value="page.content" unwrap="p" />
+      <MDC class="prose" :value="page.content" />
 
       <!-- <div
         class="flex flex-row justify-center items-center py-10 space-x-[-2rem]"

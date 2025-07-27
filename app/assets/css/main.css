@@ -74,6 +74,14 @@ body {
     );
   }
 
+  h4 {
+    font-size: var(--text-lg);
+    line-height: var(
+      --tw-leading,
+      var(--text-lg--line-height)
+    );
+  }
+
   P {
     text-wrap: pretty;
     margin-block: calc(var(--spacing) * 5);
@@ -92,6 +100,10 @@ body {
   hr {
     border-color: var(--ui-border-accented);
     border-width: 1px;
+    margin-block: calc(var(--spacing) * 10);
+  }
+
+  img {
     margin-block: calc(var(--spacing) * 10);
   }
 }

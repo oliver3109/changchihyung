@@ -97,7 +97,11 @@ const formatDate = (dateString: string) => {
           </div>
         </div>
         <div class="max-w-3xl mx-auto py-16">
-          <ContentRenderer v-if="page.body" :value="page" />
+          <ContentRenderer
+            v-if="page.body"
+            class="prose"
+            :value="page"
+          />
 
           <div
             class="flex items-center justify-end gap-2 text-sm text-muted mt-20"

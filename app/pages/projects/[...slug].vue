@@ -90,7 +90,7 @@ const formatDate = (dateString: string) => {
           />
 
           <div
-            class="flex items-center justify-end gap-2 text-sm text-muted"
+            class="flex items-center justify-end gap-2 text-sm text-muted mt-20"
           >
             <UButton
               size="sm"
